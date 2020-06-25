@@ -33,6 +33,7 @@ export class SearchList {
       const ul = document.querySelector(".searched-list");
       const searchingTitle = document.querySelector(".searching-movie-title");
       ul.append(listItem);
+      listItem.scrollIntoView({ behavior: 'smooth' });
 
       listItem.addEventListener("click", () => {
         ul.removeChild(listItem);

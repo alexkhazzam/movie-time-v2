@@ -50,6 +50,7 @@ export class HandleUserInputs {
         movieElement.id = Math.random();
         movieElement.textContent = listItem;
         this.movieList.append(movieElement);
+        movieElement.scrollIntoView({ behavior: 'smooth' });
         listOfMovies.push(this.movie);
 
         movieElement.addEventListener("click", () => {

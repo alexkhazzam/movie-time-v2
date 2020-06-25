@@ -39,6 +39,7 @@ export class RenderStorage {
           return;
         } else {
           this.movieList.append(li);
+          li.scrollIntoView({ behavior: 'smooth' });
           li.addEventListener("click", () => {
             window.localStorage.removeItem(window.localStorage.key(li.id));
             this.movieList.removeChild(li);

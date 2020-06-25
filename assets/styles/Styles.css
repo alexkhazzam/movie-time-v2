@@ -241,3 +241,8 @@ li:hover{
 p {
     margin-left: 25px;
 }
+
+ul {
+    overflow: scroll;
+    max-height: 200px;
+}
